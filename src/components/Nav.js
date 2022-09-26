@@ -2,20 +2,39 @@
 
 import React from 'react';
 import './Nav.css';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import { notInitialized } from 'react-redux/es/utils/useSyncExternalStore';
 
 function Nav() {
   return (
     <div className="navigation">
-      <Link to="/" className="rockets style">
+      <NavLink
+        style={({ isActive }) => ({
+          color: isActive ? '#0000FF' : '#545e6f',
+        })}
+        to="Rockets"
+        className="style"
+      >
         Rockets
-      </Link>
-      <Link to="Mission" className="mission style">
+      </NavLink>
+      <NavLink
+        style={({ isActive }) => ({
+          color: isActive ? '#0000FF' : '#545e6f',
+        })}
+        to="Mission"
+        className="style"
+      >
         Mission
-      </Link>
-      <Link to="MyProfile" className="my-profile style">
+      </NavLink>
+      <NavLink
+        style={({ isActive }) => ({
+          color: isActive ? '#0000FF' : '#545e6f',
+        })}
+        to="MyProfile"
+        className="style"
+      >
         My Profile
-      </Link>
+      </NavLink>
     </div>
   );
 }
