@@ -1,0 +1,15 @@
+.navigation {
+  display: flex;
+  gap: 50px;
+  color: black;
+}
+
+.style {
+  color: blue;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.style:hover {
+  color: rgb(0, 0, 0);
+}
