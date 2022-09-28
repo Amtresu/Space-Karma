@@ -65,8 +65,8 @@ table {
 
 .Reserved {
   background: none;
-  border-color: #36454f;
-  color: #36454f;
+  border-color: red;
+  color: red;
   border-radius: 6px;
   padding: 10px;
   font-size: 15px;
@@ -81,6 +81,7 @@ table {
 }
 
 .Reserved:hover {
-  background-color: lightcoral;
   transform: scale(1.05);
 }
+
+
