@@ -12,9 +12,9 @@ function Myprofile() {
       <div className="rockets">
         <h2>Reserved Rockets</h2>
         <ListGroup>
-          {reservationRocket.map((v) => (
-            <ListGroup.Item key={v.id}>
-              <h4>{v.name}</h4>
+          {reservationRocket.map((rocket) => (
+            <ListGroup.Item key={rocket.id}>
+              <h4>{rocket.name}</h4>
             </ListGroup.Item>
           ))}
         </ListGroup>
