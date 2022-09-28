@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import Header from './components/Header';
 import { Routes, Route } from 'react-router-dom';
 import Rockets from './components/Rockets';
-import Mission from './components/Mission';
+import Missions from './components/Missions';
 import MyProfile from './components/MyProfile';
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
       <Header />
       <Routes>
         <Route exact path="Rockets" element={<Rockets />} />
-        <Route path="Mission" element={<Mission />} />
+        <Route path="Missions" element={<Missions />} />
         <Route path="MyProfile" element={<MyProfile />} />
       </Routes>
     </div>
