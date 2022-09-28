@@ -12,7 +12,7 @@ function Nav() {
         style={({ isActive }) => ({
           color: isActive ? '#0000FF' : '#545e6f',
         })}
-        to="Rockets"
+        to="/"
         className="style"
       >
         Rockets
@@ -21,7 +21,7 @@ function Nav() {
         style={({ isActive }) => ({
           color: isActive ? '#0000FF' : '#545e6f',
         })}
-        to="Missions"
+        to="Mission"
         className="style"
       >
         Mission

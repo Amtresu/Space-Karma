@@ -14,27 +14,23 @@ function Missions() {
 
   return (
     <table>
-    <thead>
-      <tr>
-        <th>Mission</th>
-        <th>Description</th>
-        <th>Status</th>
-      </tr>
-    </thead>
-    <tbody>
-
-      {missions.map((mission) => (
-        
-        <Mission
-          key={mission.id}
-          id={mission.id}
-          name={mission.name}
-          description={mission.description}
-          joined={mission.joined}
-        />
-      ))}
-
-    </tbody>
+      <thead>
+        <tr>
+          <th>Mission</th>
+          <th>Description</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        {missions.map((mission) => (
+          <Mission
+            key={mission.id}
+            id={mission.id}
+            name={mission.name}
+            description={mission.description}
+          />
+        ))}
+      </tbody>
     </table>
   );
 }

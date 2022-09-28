@@ -1,7 +1,7 @@
 /* eslint-disable */
 
-import { createAsyncThunk } from '@reduxjs/toolkit';
 import ROCKET_API from '../../api/RocketApi';
+import { createAsyncThunk } from '@reduxjs/toolkit';
 
 const initialState = [];
 const ADD_ROCKET = 'ADD_ROCKET';
@@ -22,20 +22,19 @@ const getRocket = createAsyncThunk(ADD_ROCKET, async () => {
     method: 'GET',
     headers: { 'Content-Type': 'application/json' },
   }).then((response) => response.json());
-  console.log(data);
   let item;
   try {
     const api = await data;
     item = api.map((rocket) => ({
+      key: rocket.id,
       id: rocket.id,
       name: rocket.rocket_name,
-      description: rocket.description,
       img: rocket.flickr_images[0],
+      description: rocket.description,
       reserved: false,
     }));
-    console.log(api);
-  } catch {
-    console.log('ERROR');
+  } catch (error) {
+    console.error('ERR', error);
   }
   return item;
 });
@@ -51,9 +50,9 @@ export default (state = initialState, action) => {
         }
         return { ...rocket, reserved: !rocket.reserved };
       });
+
     default:
       return state;
   }
 };
-
 export { getRocket };
