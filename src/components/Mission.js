@@ -1,46 +1,33 @@
-import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { fetchMisisons } from '../redux/missions/mission';
+import React from 'react';
+import { useDispatch } from 'react-redux';
+import  {toggleMission}  from '../redux/missions/mission';
 import './mission.css'
 
 
-const Mission = () => {
-  const store = useSelector((state) => state.missionReducer)  ;
+const Mission = (props) => {
+  const { id, name, description, joined } = props;
   const dispatch = useDispatch();
-  const slicedStore = store.slice(0,10)
 
-  useEffect(() => {
-    fetch('https://api.spacexdata.com/v3/missions')
-      .then((res) => res.json())
-      .then((json) => {
-        if (store.length === 0) {
-          dispatch(fetchMisisons(json));
-        }
-      });
-  });
+  const toggleMissions = () => {
+    dispatch(toggleMission(id));
+  };
+
+
+  const button = joined ? 'Joined' : 'Join Mission';
+  const reserve = joined ? 'Reserved' : 'Reserve';
+  const member = joined ? 'member' : 'non-member';
 
   return (
-    <table>
-
-      <thead>
-        <tr>
-          <th>Mission</th>
-          <th>Description</th>
-          <th>Status</th>
-        </tr>
-      </thead>
-
-      {slicedStore.map((mission) => (
-        <tbody key={mission.mission_id}>
-        <tr className='mission-list' key={mission.mission_id}>
-          <td className='mission-title'>{mission.mission_name}</td>
-          <td className='mission-description'>{mission.description}</td>
-          <td className='mission-status'><button className='mission-status-button'>Not a Member</button></td>
-          <td className='mission-button'><button className='join-mission-button'>Join Mission</button></td>
-        </tr>
-        </tbody>
-      ))}
-    </table>
+    <tr className='mission-list' key={id}>
+      <td className='mission-title'>{name}</td>
+      <td className='mission-description'>{description}</td>
+      <td className='mission-status'><button className={member}>{reserve}</button></td>
+      <td className='mission-button'>
+        <button id={id} type="button" className={reserve} onClick={toggleMissions}>
+          {button}
+        </button>
+      </td>
+    </tr>
   );
 };;
 export default Mission

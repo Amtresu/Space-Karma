@@ -21,7 +21,7 @@ function Nav() {
         style={({ isActive }) => ({
           color: isActive ? '#0000FF' : '#545e6f',
         })}
-        to="Mission"
+        to="Missions"
         className="style"
       >
         Mission

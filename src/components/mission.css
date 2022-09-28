@@ -32,16 +32,26 @@ table {
   padding-bottom: 25px;
 }
 
-.mission-status-button {
+.member {
+  background-color: aquamarine;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  padding: 5px;
+  width: 80px;
+}
+
+.non-member {
   color: #fff;
   background-color: darkgray;
   border: none;
   border-radius: 6px;
   font-weight: bold;
   padding: 5px;
+  width: 80px;
 }
 
-.join-mission-button {
+.Reserve {
   background: none;
   border-color: #36454f;
   color: #36454f;
@@ -49,9 +59,28 @@ table {
   padding: 10px;
   font-size: 15px;
   cursor: pointer;
+  width: 100px;
+  height: 60px;
 }
 
-.join-mission-button:hover {
+.Reserved {
+  background: none;
+  border-color: #36454f;
+  color: #36454f;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  width: 100px;
+  height: 60px;
+}
+
+.Reserve:hover {
   background-color: lightgreen;
+  transform: scale(1.05);
+}
+
+.Reserved:hover {
+  background-color: lightcoral;
   transform: scale(1.05);
 }
