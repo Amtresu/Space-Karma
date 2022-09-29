@@ -28,6 +28,7 @@ function Missions() {
             id={mission.id}
             name={mission.name}
             description={mission.description}
+            joined={mission.joined}
           />
         ))}
       </tbody>
