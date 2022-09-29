@@ -1,0 +1,349 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render All Components render Header: 
+        <div
+          class="header"
+        >
+          <div
+            class="header-photo"
+          >
+            <img
+              alt="logo"
+              src="planet.png"
+            />
+            <h1
+              class="header-text"
+            >
+              Space Karma Page
+            </h1>
+          </div>
+          <div
+            class="navigation"
+          >
+            <a
+              aria-current="page"
+              class="style active"
+              href="/"
+              style="color: rgb(0, 0, 255);"
+            >
+              Rockets
+            </a>
+            <a
+              class="style"
+              href="/Mission"
+              style="color: rgb(84, 94, 111);"
+            >
+              Mission
+            </a>
+            <a
+              class="style"
+              href="/MyProfile"
+              style="color: rgb(84, 94, 111);"
+            >
+              My Profile
+            </a>
+          </div>
+        </div>
+     1`] = `
+<div
+  class="header"
+>
+  <div
+    class="header-photo"
+  >
+    <img
+      alt="logo"
+      src="planet.png"
+    />
+    <h1
+      class="header-text"
+    >
+      Space Karma Page
+    </h1>
+  </div>
+  <div
+    class="navigation"
+  >
+    <a
+      aria-current="page"
+      class="style active"
+      href="/"
+      style="color: rgb(0, 0, 255);"
+    >
+      Rockets
+    </a>
+    <a
+      class="style"
+      href="/Mission"
+      style="color: rgb(84, 94, 111);"
+    >
+      Mission
+    </a>
+    <a
+      class="style"
+      href="/MyProfile"
+      style="color: rgb(84, 94, 111);"
+    >
+      My Profile
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Render All Components render MyProfile: 
+        <div className='my-profile'>
+        <table className="main">
+          <thead>
+          <tr>
+            <th>My Rockets</th>
+          </tr>
+          </thead>
+          <tbody className="rockets">
+                <tr>
+                  <td></td>
+                  </tr>
+          </tbody>
+        </table>
+  
+        <table className="main">
+          <thead>
+          <tr>
+            <th>My Missions</th>
+          </tr>
+          </thead>
+          <tbody className="missions">
+                <tr>
+                  <td></td>
+          </tbody>
+        </table>
+      </div>
+     1`] = `
+<div
+  class="my-profile"
+>
+  <table
+    class="main"
+  >
+    <thead>
+      <tr>
+        <th>
+          My Rockets
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      class="rockets"
+    />
+  </table>
+  <table
+    class="main"
+  >
+    <thead>
+      <tr>
+        <th>
+          My Missions
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      class="missions"
+    />
+  </table>
+</div>
+`;
+
+exports[`Render All Components render Rocket: <div>
+           <img
+             alt="rocket"
+           />
+           <h2 />
+           <div
+             class="reservation"
+           >
+             <button />
+           </div>
+           <button
+             type="button"
+           >
+             Reserve Rocket
+           </button>
+         </div> 1`] = `
+<div>
+  <img
+    alt="rocket"
+  />
+  <h2 />
+  <div
+    class="reservation"
+  >
+    <button />
+  </div>
+  <button
+    type="button"
+  >
+    Reserve Rocket
+  </button>
+</div>
+`;
+
+exports[`Render All Components render Rockets: 
+        <div>
+        <div className="rocket-main">
+          <Rocket/>
+      </div>
+     1`] = `
+<div
+  class="rocket-main"
+/>
+`;
+
+exports[`Render All Components render mission: <tr
+      class="mission-list"
+    >
+      <td
+        class="mission-title"
+      />
+      <td
+        class="mission-description"
+      />
+      <td
+        class="mission-status"
+      >
+        <button
+          class="non-member"
+        >
+          Reserve
+        </button>
+      </td>
+      <td
+        class="mission-button"
+      >
+        <button
+          class="Reserve"
+          type="button"
+        >
+          Join Mission
+        </button>
+      </td>
+    </tr> 1`] = `
+<tr
+  class="mission-list"
+>
+  <td
+    class="mission-title"
+  />
+  <td
+    class="mission-description"
+  />
+  <td
+    class="mission-status"
+  >
+    <button
+      class="non-member"
+    >
+      Reserve
+    </button>
+  </td>
+  <td
+    class="mission-button"
+  >
+    <button
+      class="Reserve"
+      type="button"
+    >
+      Join Mission
+    </button>
+  </td>
+</tr>
+`;
+
+exports[`Render All Components render missions: 
+        <table>
+           <thead>
+             <tr>
+               <th>
+                 Mission
+               </th>
+               <th>
+                 Description
+               </th>
+               <th>
+                 Status
+               </th>
+             </tr>
+           </thead>
+           <tbody />
+         </table>
+     1`] = `
+<table>
+  <thead>
+    <tr>
+      <th>
+        Mission
+      </th>
+      <th>
+        Description
+      </th>
+      <th>
+        Status
+      </th>
+    </tr>
+  </thead>
+  <tbody />
+</table>
+`;
+
+exports[`Render All Components render navbar: 
+          class="navigation"
+    >
+      <a
+        aria-current="page"
+        class="style active"
+        href="/"
+        style="color: rgb(0, 0, 255);"
+      >
+        Rockets
+      </a>
+      <a
+        class="style"
+        href="/Mission"
+        style="color: rgb(84, 94, 111);"
+      >
+        Mission
+      </a>
+      <a
+        class="style"
+        href="/MyProfile"
+        style="color: rgb(84, 94, 111);"
+      >
+        My Profile
+      </a>
+    </div>
+   1`] = `
+<div
+  class="navigation"
+>
+  <a
+    aria-current="page"
+    class="style active"
+    href="/"
+    style="color: rgb(0, 0, 255);"
+  >
+    Rockets
+  </a>
+  <a
+    class="style"
+    href="/Mission"
+    style="color: rgb(84, 94, 111);"
+  >
+    Mission
+  </a>
+  <a
+    class="style"
+    href="/MyProfile"
+    style="color: rgb(84, 94, 111);"
+  >
+    My Profile
+  </a>
+</div>
+`;
