@@ -39,6 +39,7 @@ const getMissions = createAsyncThunk(ADD_MISSION, async () => {
 export default (state = initialState, action) => {
   switch (action.type) {
     case `${ADD_MISSION}/fulfilled`:
+      if(state == 0 )
       return action.payload;
     case TOGGLE_MISSION:
       return state.map((mission) => {

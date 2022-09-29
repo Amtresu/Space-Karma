@@ -42,6 +42,7 @@ const getRocket = createAsyncThunk(ADD_ROCKET, async () => {
 export default (state = initialState, action) => {
   switch (action.type) {
     case `${ADD_ROCKET}/fulfilled`:
+      if( state == 0)
       return action.payload;
     case TOGGLE_ROCKET:
       return state.map((rocket) => {
