@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { toggleRocket } from '../redux/rockets/rockets';
+import './Rocket.css';
 
 function Rocket(props) {
   const { id, name, description, img, reserved } = props;
@@ -13,16 +14,23 @@ function Rocket(props) {
     dispatch(toggleRocket(id));
   };
   return (
-    <div>
-      <img src={img} alt="rocket" />
-      <h2>{name}</h2>
-      <div className="reservation">
-        <button>{reserved && 'Reserved'}</button>
-        {description}
+    <div className="rocket">
+      <img src={img} alt="rocket" className="rocket-image" />
+      <div className="position">
+        <h2 className="rocket-heading">{name}</h2>
+        <div className="reservation">
+          <span className="span">{reserved && 'Reserved'} </span>
+          {description}
+        </div>
+        <button
+          id={id}
+          className="button btn"
+          type="button"
+          onClick={toggleReservation}
+        >
+          {button}
+        </button>
       </div>
-      <button id={id} type="button" onClick={toggleReservation}>
-        {button}
-      </button>
     </div>
   );
 }
