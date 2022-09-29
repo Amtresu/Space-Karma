@@ -3,7 +3,6 @@
 import React from 'react';
 import './Nav.css';
 import { NavLink } from 'react-router-dom';
-import { notInitialized } from 'react-redux/es/utils/useSyncExternalStore';
 
 function Nav() {
   return (
