@@ -4,6 +4,7 @@
   margin: 20px;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 2px solid gainsboro;
 }
 
 img {
@@ -12,5 +13,5 @@ img {
 
 .header-photo {
   display: flex;
-  gap: 20px;
+  gap: 30px;
 }
