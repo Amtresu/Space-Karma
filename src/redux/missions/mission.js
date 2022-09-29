@@ -24,10 +24,11 @@ const getMissions = createAsyncThunk(ADD_MISSION, async () => {
   try {
     const api = await data;
     item = api.map((mission) => ({
-      key: mission.id,
-      id: mission.id,
+      key: mission.mission_id,
+      id: mission.mission_id,
       name: mission.mission_name,
       description: mission.description,
+      joined: false,
     }));
   } catch (error) {
     console.error('ERR', error);
@@ -44,7 +45,7 @@ export default (state = initialState, action) => {
         if (mission.id !== action.payload) {
           return mission;
         }
-        return { ...mission, reserved: !mission.reserved };
+        return { ...mission, joined: !mission.joined };
       });
 
     default:
