@@ -1,0 +1,85 @@
+ul {
+  list-style: none;
+}
+
+td {
+  text-align: center;
+  border: 1px solid gray;
+}
+
+tbody:nth-child(odd) {
+  background-color: #ececec;
+}
+
+table {
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  text-align: left;
+  border: 1px solid gray;
+  border-collapse: collapse;
+}
+
+.mission-title {
+  font-weight: bold;
+  text-align: left;
+  padding-left: 5px;
+}
+
+.mission-description {
+  width: 70%;
+  text-align: left;
+  padding-left: 5px;
+  padding-bottom: 25px;
+}
+
+.member {
+  background-color: aquamarine;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  padding: 5px;
+  width: 80px;
+}
+
+.non-member {
+  color: #fff;
+  background-color: darkgray;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  padding: 5px;
+  width: 80px;
+}
+
+.Reserve {
+  background: none;
+  border-color: #36454f;
+  color: #36454f;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  width: 100px;
+  height: 60px;
+}
+
+.Reserved {
+  background: none;
+  border-color: red;
+  color: red;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  width: 100px;
+  height: 60px;
+}
+
+.Reserve:hover {
+  background-color: lightgreen;
+  transform: scale(1.05);
+}
+
+.Reserved:hover {
+  transform: scale(1.05);
+}

@@ -1,0 +1,13 @@
+.my-profile {
+  display: flex;
+  font-size: 25px;
+}
+
+.main {
+  width: 50%;
+  text-align: center;
+}
+
+tr {
+  height: 100px;
+}

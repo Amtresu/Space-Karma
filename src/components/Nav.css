@@ -1,0 +1,10 @@
+.navigation {
+  display: flex;
+  gap: 50px;
+  color: black;
+}
+
+.style {
+  font-size: 20px;
+  text-decoration: none;
+}

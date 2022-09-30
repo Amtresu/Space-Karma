@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid gainsboro;
+}
+
+img {
+  width: 10%;
+}
+
+.header-photo {
+  display: flex;
+  gap: 30px;
+}
